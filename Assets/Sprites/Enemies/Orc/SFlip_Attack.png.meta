@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 5b45f86aeba55fb4aa1d595d28a4a9ae
+guid: c0fb0f241e11271408aab114bdc8acd3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6486419780738374814
-    second: S_Walk_0
+      213: -6079266665276158555
+    second: SFlip_Attack_0
   - first:
-      213: 623712257120239520
-    second: S_Walk_1
+      213: -5084296107273806054
+    second: SFlip_Attack_1
   - first:
-      213: 1556825751644493017
-    second: S_Walk_2
+      213: 2016185052189110281
+    second: SFlip_Attack_2
   - first:
-      213: 3715194652417247120
-    second: S_Walk_3
+      213: -4491948236468692787
+    second: SFlip_Attack_3
   - first:
-      213: 3171907327690987403
-    second: S_Walk_4
+      213: -6937720319449725412
+    second: SFlip_Attack_4
   - first:
-      213: 8712610202006430328
-    second: S_Walk_5
+      213: -2065280611706867122
+    second: SFlip_Attack_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Walk_0
+      name: SFlip_Attack_5
       rect:
         serializedVersion: 2
-        x: 11
-        y: 11
+        x: 16
+        y: 9
         width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 263a501739b9bf5a0800000000000000
-      internalID: -6486419780738374814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_1
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 10
-        width: 25
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0af75b74efed7a800800000000000000
-      internalID: 623712257120239520
+      spriteID: 5ad47516d2b12aba0800000000000000
+      internalID: -6079266665276158555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: S_Walk_2
+      name: SFlip_Attack_4
       rect:
         serializedVersion: 2
-        x: 107
+        x: 62
         y: 9
-        width: 22
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d453ffc5c4fa9510800000000000000
-      internalID: 1556825751644493017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 9
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 097c2c83ad50f8330800000000000000
-      internalID: 3715194652417247120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 10
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b87da77b8e0e40c20800000000000000
-      internalID: 3171907327690987403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_5
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 10
-        width: 22
+        width: 26
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 872a90d31d869e870800000000000000
-      internalID: 8712610202006430328
+      spriteID: a1f1b01d0a3f079b0800000000000000
+      internalID: -5084296107273806054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 9
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9003f2d6f9deafb10800000000000000
+      internalID: 2016185052189110281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 9
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc857d7d0e469a1c0800000000000000
+      internalID: -4491948236468692787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 9
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c168038802448bf90800000000000000
+      internalID: -6937720319449725412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 9
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42f5b9d936a653e0800000000000000
+      internalID: -2065280611706867122
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a39d14b288321c944b6366aab42d9ef8
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S_Walk_0: -6486419780738374814
-      S_Walk_1: 623712257120239520
-      S_Walk_2: 1556825751644493017
-      S_Walk_3: 3715194652417247120
-      S_Walk_4: 3171907327690987403
-      S_Walk_5: 8712610202006430328
+      SFlip_Attack_0: -2065280611706867122
+      SFlip_Attack_1: -6937720319449725412
+      SFlip_Attack_2: -4491948236468692787
+      SFlip_Attack_3: 2016185052189110281
+      SFlip_Attack_4: -5084296107273806054
+      SFlip_Attack_5: -6079266665276158555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 5b45f86aeba55fb4aa1d595d28a4a9ae
+guid: 90a1e9dca27dfe4428cbca240ffb33e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6486419780738374814
-    second: S_Walk_0
-  - first:
-      213: 623712257120239520
-    second: S_Walk_1
-  - first:
-      213: 1556825751644493017
-    second: S_Walk_2
-  - first:
-      213: 3715194652417247120
-    second: S_Walk_3
-  - first:
-      213: 3171907327690987403
-    second: S_Walk_4
-  - first:
-      213: 8712610202006430328
-    second: S_Walk_5
+      213: 1075546348022640503
+    second: SFlip_Walk_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +100,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: S_Walk_0
+      name: SFlip_Walk_5
       rect:
         serializedVersion: 2
-        x: 11
-        y: 11
-        width: 23
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 263a501739b9bf5a0800000000000000
-      internalID: -6486419780738374814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_1
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 10
-        width: 25
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0af75b74efed7a800800000000000000
-      internalID: 623712257120239520
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_2
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 9
-        width: 22
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9d453ffc5c4fa9510800000000000000
-      internalID: 1556825751644493017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_3
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 9
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 097c2c83ad50f8330800000000000000
-      internalID: 3715194652417247120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_4
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 10
-        width: 20
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b87da77b8e0e40c20800000000000000
-      internalID: 3171907327690987403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: S_Walk_5
-      rect:
-        serializedVersion: 2
-        x: 251
+        x: 15
         y: 10
         width: 22
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 872a90d31d869e870800000000000000
-      internalID: 8712610202006430328
+      spriteID: 77fab5d74bb1dee00800000000000000
+      internalID: 1075546348022640503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 10
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fb295f2c5a6a14da018c8e2ca4ce6c
+      internalID: -572841934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 9
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8b9a1b5d3877046902b947fc634e69
+      internalID: -1708479550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 9
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5885436d2dffd564a8bb873326132fee
+      internalID: -494130757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 10
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d8600c8bacc7f4987db6ae4d51bdfb
+      internalID: -1692186074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SFlip_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 11
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833d44d1a854d5d45a4a24acffd7e897
+      internalID: 1207826748
       vertices: []
       indices: 
       edges: []
@@ -250,7 +235,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ad73145c0b7d71844b6793e235d8b58c
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +245,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      S_Walk_0: -6486419780738374814
-      S_Walk_1: 623712257120239520
-      S_Walk_2: 1556825751644493017
-      S_Walk_3: 3715194652417247120
-      S_Walk_4: 3171907327690987403
-      S_Walk_5: 8712610202006430328
+      SFlip_Walk_0: 1207826748
+      SFlip_Walk_1: -1692186074
+      SFlip_Walk_2: -494130757
+      SFlip_Walk_3: -1708479550
+      SFlip_Walk_4: -572841934
+      SFlip_Walk_5: 1075546348022640503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

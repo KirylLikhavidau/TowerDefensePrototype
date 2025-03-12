@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 53352750892946364}
   - component: {fileID: 6132650580857783117}
   - component: {fileID: 7434893096623024843}
+  - component: {fileID: 3847932037748320952}
   m_Layer: 5
   m_Name: optionsWIndow
   m_TagString: Untagged
@@ -105,6 +106,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &3847932037748320952
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049463309117590789}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1718119706995593835
 GameObject:
   m_ObjectHideFlags: 0

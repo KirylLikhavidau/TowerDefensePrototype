@@ -5,7 +5,9 @@ using UnityEngine;
 public class Enemy : Unit 
 {
     [SerializeField, Range(0, 100)] private float _sensetivityToDamage;
+    [SerializeField, Range(1, 20)] private int _damageToPlayer;
 
+    public int DamageToPlayer => _damageToPlayer;
     protected override void TakeDamage(float damage)
     {
         _health -= damage / 100 * _sensetivityToDamage ;

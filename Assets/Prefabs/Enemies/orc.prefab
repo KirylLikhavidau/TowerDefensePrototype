@@ -127,7 +127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 20
+  _damageToUnits: 0
   _sensetivityToDamage: 100
+  _damageToPlayer: 1.3
 --- !u!114 &6398812447721561359
 MonoBehaviour:
   m_ObjectHideFlags: 0

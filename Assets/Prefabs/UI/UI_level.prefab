@@ -664,6 +664,8 @@ GameObject:
   - component: {fileID: 6719460864160535765}
   - component: {fileID: 7653852489820921953}
   - component: {fileID: 8974554950238072405}
+  - component: {fileID: 7188144553365321755}
+  - component: {fileID: 6841106923533647370}
   m_Layer: 5
   m_Name: heart_amount
   m_TagString: Untagged
@@ -789,3 +791,31 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7188144553365321755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617613615386690188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33495749da83a7848bef073daf0d9944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 20
+  _healthZone: {fileID: 0}
+--- !u!114 &6841106923533647370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617613615386690188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c6f970f2dc72f4593f2291340469ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthText: {fileID: 8974554950238072405}
+  _healthObject: {fileID: 7188144553365321755}

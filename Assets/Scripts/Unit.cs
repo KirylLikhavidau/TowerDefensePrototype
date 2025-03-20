@@ -4,6 +4,9 @@ using UnityEngine;
 public abstract class Unit : MonoBehaviour
 {
     [SerializeField] protected float _health;
+    [SerializeField] protected float _damageToUnits;
+
+    public float DamageToUnits => _damageToUnits;
 
     public event Action<Unit> Died;
 

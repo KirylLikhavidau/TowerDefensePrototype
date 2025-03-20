@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 20
+  _sensetivityToDamage: 100
 --- !u!114 &6398812447721561359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,8 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e22c2324631a24b83631142a2d52f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 7935775813955306093}
-  _mover: {fileID: 0}
+  _enemyPrefab: {fileID: 7935775813955306093}
+  _mover: {fileID: 6398812447721561359}
   _animationTree: {fileID: 4273822494923652127}
 --- !u!61 &1092581906562807673
 BoxCollider2D:

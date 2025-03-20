@@ -1,16 +1,16 @@
 ﻿using System;
+using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : Unit 
 {
-    [SerializeField] private ObjectPool _pool;
-    [SerializeField] private float _health;
+    [SerializeField, Range(0, 100)] private float _sensetivityToDamage;
 
-    public bool IsDead => _health <= 0;
-
-    private void Update()
+    protected override void TakeDamage(float damage)
     {
-        if (IsDead)
-            _pool.PutObject(gameObject.GetComponent<Enemy>());
+        _health -= damage / 100 * _sensetivityToDamage ;
+
+        if (_health <= 0)
+            Die();
     }
 }

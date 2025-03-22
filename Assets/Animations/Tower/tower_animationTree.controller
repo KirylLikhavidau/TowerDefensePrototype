@@ -98,9 +98,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: SecondUpgrade
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: UpgradeLevel
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8281496848504701996}
   m_Solo: 0
@@ -150,8 +150,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Destroy
+  - m_ConditionMode: 6
+    m_ConditionEvent: UpgradeLevel
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1393209052422748503}
@@ -176,20 +176,8 @@ AnimatorController:
   m_Name: tower_animationTree
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Destroy
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: FirstUpgrade
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: SecondUpgrade
-    m_Type: 4
+  - m_Name: UpgradeLevel
+    m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
@@ -291,9 +279,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: FirstUpgrade
-    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: UpgradeLevel
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6888469281277336505}
   m_Solo: 0
@@ -370,8 +358,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Destroy
+  - m_ConditionMode: 6
+    m_ConditionEvent: UpgradeLevel
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3436835737956820368}

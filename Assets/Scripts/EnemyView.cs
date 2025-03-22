@@ -24,15 +24,15 @@ public class EnemyView : MonoBehaviour
 
     private void ResetAnimations()
     {
-        _animationTree.SetBool(EnemyAnimatorConstants.States.Dead, false);
-        _animationTree.SetBool(EnemyAnimatorConstants.States.RightMotion, false);
-        _animationTree.SetBool(EnemyAnimatorConstants.States.LeftMotion, false);
-        _animationTree.SetBool(EnemyAnimatorConstants.States.DownMotion, true);
-        _animationTree.SetBool(EnemyAnimatorConstants.States.UpMotion, false);
+        _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.Dead, false);
+        _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.RightMotion, false);
+        _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.LeftMotion, false);
+        _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.DownMotion, true);
+        _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.UpMotion, false);
     }
 
     private void PlayDeadAnimation(Unit unit)
     {
-        _animationTree.SetBool(EnemyAnimatorConstants.States.Dead, true);
+        _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.Dead, true);
     }
 }

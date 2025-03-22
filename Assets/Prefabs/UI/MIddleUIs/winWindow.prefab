@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8342572597677688273}
   - component: {fileID: 1667453228548818795}
   m_Layer: 5
-  m_Name: winWindow
+  m_Name: WinWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

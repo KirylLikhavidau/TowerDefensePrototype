@@ -4094,7 +4094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9178058020684920563}
   m_Layer: 0
-  m_Name: container
+  m_Name: Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4676,7 +4676,7 @@ GameObject:
   - component: {fileID: 1024059076386969948}
   - component: {fileID: 6060173948138721989}
   m_Layer: 0
-  m_Name: enemy_spawner
+  m_Name: EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18425,7 +18425,7 @@ GameObject:
   - component: {fileID: 9063292829770518355}
   - component: {fileID: 786701719430454133}
   m_Layer: 0
-  m_Name: healthZone
+  m_Name: HealthZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29192,7 +29192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4689918037795454277}
   m_Layer: 0
-  m_Name: level_01
+  m_Name: Level_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60511,7 +60511,7 @@ GameObject:
   - component: {fileID: 3074540632811134232}
   - component: {fileID: 2764760622248935802}
   m_Layer: 0
-  m_Name: enemy_pool
+  m_Name: EnemyPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79973,7 +79973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6022973892562788732}
   m_Layer: 0
-  m_Name: way
+  m_Name: Way
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85756,7 +85756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5301204557426864548}
   m_Layer: 0
-  m_Name: trees
+  m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91741,7 +91741,7 @@ GameObject:
   - component: {fileID: 3708322882745244605}
   - component: {fileID: 2889747764406685572}
   m_Layer: 0
-  m_Name: groundMap
+  m_Name: GroundMap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93337,7 +93337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6921290012780062072}
   m_Layer: 0
-  m_Name: dirt
+  m_Name: Dirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101498,7 +101498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4356084280584989349}
   m_Layer: 0
-  m_Name: towers
+  m_Name: Towers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112254,7 +112254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8901098506878470538}
   m_Layer: 0
-  m_Name: small_decorates
+  m_Name: SmallDecorates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112903,7 +112903,7 @@ PrefabInstance:
       objectReference: {fileID: 3903543500230205372}
     - target: {fileID: 2343242212756894207, guid: 87562e54b066b7a4c85af6dcdcf7d492, type: 3}
       propertyPath: m_Name
-      value: orc
+      value: Orc
       objectReference: {fileID: 0}
     - target: {fileID: 2343242212756894207, guid: 87562e54b066b7a4c85af6dcdcf7d492, type: 3}
       propertyPath: m_IsActive
@@ -113011,7 +113011,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4152802569797273312, guid: 2e4e1cc57a6474d4a91c7dff648183dc, type: 3}
       propertyPath: m_Name
-      value: UI_level
+      value: LevelUI
       objectReference: {fileID: 0}
     - target: {fileID: 7188144553365321755, guid: 2e4e1cc57a6474d4a91c7dff648183dc, type: 3}
       propertyPath: _healthZone

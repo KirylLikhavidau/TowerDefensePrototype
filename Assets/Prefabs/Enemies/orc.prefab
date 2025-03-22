@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1565696454656070700}
   - component: {fileID: 1092581906562807673}
   m_Layer: 0
-  m_Name: orc
+  m_Name: Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   _health: 20
   _damageToUnits: 0
   _sensetivityToDamage: 100
-  _damageToPlayer: 1.3
+  _damageToPlayer: 1
 --- !u!114 &6398812447721561359
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 3301874228317119297}
   - component: {fileID: 5311892694320175561}
   m_Layer: 5
-  m_Name: defeatWindow
+  m_Name: DefeatWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

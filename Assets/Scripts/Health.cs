@@ -1,21 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class Health : Resource
 {
-    [SerializeField] private int _health = 20;
     [SerializeField] private HealthZone _healthZone;
-
-    public int HealthAmount => _health;
-
-    public event Action<int> HealthChanged;
-
-    private int _maxHealth;
-
-    private void Awake()
-    {
-        _maxHealth = _health;
-    }
 
     private void OnEnable()
     {
@@ -29,7 +17,7 @@ public class Health : MonoBehaviour
 
     private void DecreaseHealth(Enemy enemy)
     {
-        _health = Mathf.Clamp(_health - enemy.DamageToPlayer, 0, _maxHealth);
-        HealthChanged?.Invoke(_health);
+        _resource = Mathf.Clamp(_resource - enemy.DamageToPlayer, 0, _maxResource);
+        InvokeAmountChangedEvent(_resource);
     }
 }

@@ -333,6 +333,8 @@ GameObject:
   - component: {fileID: 7477329699417546325}
   - component: {fileID: 3642413767245332702}
   - component: {fileID: 2332330704094021699}
+  - component: {fileID: 4279481659950127463}
+  - component: {fileID: 5333569479174771884}
   m_Layer: 5
   m_Name: energy_amount
   m_TagString: Untagged
@@ -458,6 +460,35 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4279481659950127463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5141391017943303041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebab2dbe70b9d1e40a6de0e9fa184424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resource: 0
+  _towerPrefab: {fileID: 0}
+  _enemyPrefab: {fileID: 0}
+--- !u!114 &5333569479174771884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5141391017943303041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135844e88f61d6c47b3c653ff423d162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resourceText: {fileID: 2332330704094021699}
+  _resourceObject: {fileID: 4279481659950127463}
 --- !u!1 &6251552427459886710
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33495749da83a7848bef073daf0d9944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 20
+  _resource: 0
   _healthZone: {fileID: 0}
 --- !u!114 &6841106923533647370
 MonoBehaviour:
@@ -817,5 +848,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3c6f970f2dc72f4593f2291340469ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthText: {fileID: 8974554950238072405}
-  _healthObject: {fileID: 7188144553365321755}
+  _resourceText: {fileID: 8974554950238072405}
+  _resourceObject: {fileID: 7188144553365321755}

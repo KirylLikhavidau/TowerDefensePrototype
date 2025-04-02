@@ -9,6 +9,9 @@ public class ArcherTower : Tower
     private const float _costUpgradeMultiplier = 1.8f;
     private const float _costSellMultiplier = 0.7f;
 
+    [SerializeField] private AttackZone _attackDistance;
+    [SerializeField] private ArrowSpawner _arrowSpawner;
+    [SerializeField] private ArrowMover _arrowMover;
     [SerializeField] private Button _makeButton;
     [SerializeField] private Button _upgradeButton;
     [SerializeField] private Button _sellButton;
@@ -17,6 +20,8 @@ public class ArcherTower : Tower
     public event Action TowerSold;
     public event Action<float> ManaDecreasing;
     public event Action<float> ManaIncreasing;
+
+    private bool _alreadyAttackingEnemy = false;
 
     private void Awake()
     {
@@ -33,6 +38,12 @@ public class ArcherTower : Tower
             _upgradeButton.onClick.AddListener(Upgrade);
             _sellButton.onClick.AddListener(Sell);
         }
+
+        if (_attackDistance != null)
+        {
+            _attackDistance.EnemyEntered += StartAttack;
+            _attackDistance.EnemyExited += StopAttack;   
+        }
     }
 
     private void OnDisable()
@@ -40,9 +51,30 @@ public class ArcherTower : Tower
         _makeButton?.onClick.RemoveListener(Upgrade);
         _upgradeButton?.onClick.RemoveListener(Upgrade);
         _sellButton?.onClick.RemoveListener(Sell);
+
+        if (_attackDistance != null)
+        {
+            _attackDistance.EnemyEntered -= StartAttack;
+            _attackDistance.EnemyExited -= StopAttack;
+        }
+        
     }
 
-    protected override void PerformAttack() { }
+    protected override void StartAttack(Enemy enemy)
+    {
+        if (_alreadyAttackingEnemy == false)
+        {
+            _arrowSpawner?.gameObject.SetActive(true);
+            _alreadyAttackingEnemy = true;
+        }
+    }
+
+    protected override void StopAttack(Enemy enemy)
+    {
+        _arrowSpawner?.gameObject.SetActive(false);
+        _alreadyAttackingEnemy = false;
+    }
+
     protected override void Upgrade() 
     {
         _currentSellPrice = _currentUpgradeCost * _costSellMultiplier;

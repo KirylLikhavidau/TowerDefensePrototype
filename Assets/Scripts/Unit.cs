@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public abstract class Unit : MonoBehaviour
+public abstract class Unit : PoolObject
 {
     [SerializeField] protected float _health;
     [SerializeField] protected float _damageToUnits;

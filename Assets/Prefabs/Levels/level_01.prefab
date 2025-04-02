@@ -18422,8 +18422,8 @@ GameObject:
   m_Component:
   - component: {fileID: 793781736488269610}
   - component: {fileID: 4005849172816232040}
-  - component: {fileID: 9063292829770518355}
   - component: {fileID: 786701719430454133}
+  - component: {fileID: 8252434116476019371}
   m_Layer: 0
   m_Name: HealthZone
   m_TagString: Untagged
@@ -18496,7 +18496,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.3737764, y: 2.5147796}
   m_EdgeRadius: 0
---- !u!50 &9063292829770518355
+--- !u!114 &786701719430454133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531305732630422432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ce2364bba9b4ca498b60cd3bbdf0a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &8252434116476019371
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -18523,18 +18535,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &786701719430454133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1531305732630422432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ce2364bba9b4ca498b60cd3bbdf0a7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1536483656872959332
 GameObject:
   m_ObjectHideFlags: 0

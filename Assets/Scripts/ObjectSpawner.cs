@@ -1,13 +1,13 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class UnitSpawner : MonoBehaviour
+public abstract class ObjectSpawner : MonoBehaviour
 {
     [SerializeField] protected ObjectPool _pool;
     [SerializeField] protected Transform _spawnPoint;
     [SerializeField] private float _delay;
 
-    private IEnumerator SpawnUnits()
+    private IEnumerator SpawnObjects()
     {
         var wait = new WaitForSeconds(_delay);
 
@@ -18,15 +18,20 @@ public abstract class UnitSpawner : MonoBehaviour
         }
     }
 
-    protected abstract void Spawn();
+    private void Spawn()
+    {
+        var obj = _pool.GetObject();
+        obj.gameObject.SetActive(true);
+        obj.transform.position = _spawnPoint.position;
+    }
 
     private void OnEnable()
     {
-        StartCoroutine(nameof(SpawnUnits));
+        StartCoroutine(nameof(SpawnObjects));
     }
 
     private void OnDisable()
     {
-        StopCoroutine(nameof(SpawnUnits));
+        StopCoroutine(nameof(SpawnObjects));
     }
 }

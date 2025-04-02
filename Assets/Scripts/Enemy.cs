@@ -2,7 +2,7 @@
 using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 
-public class Enemy : Unit 
+public class Enemy : Unit
 {
     [SerializeField, Range(0, 100)] private float _sensetivityToDamage;
     [SerializeField, Range(1, 20)] private int _damageToPlayer;

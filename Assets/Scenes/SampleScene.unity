@@ -395,38 +395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525a80924be2dd842bcd5036699c4628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &798264989 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1531305732630422432, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
-  m_PrefabInstance: {fileID: 1006086176}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &798264992
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798264989}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &891130581
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,9 +716,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7405127183911976436, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2073138976}
-    - targetCorrespondingSourceObject: {fileID: 1531305732630422432, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 798264992}
   m_SourcePrefab: {fileID: 100100000, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
 --- !u!4 &1028466282 stripped
 Transform:
@@ -839,6 +804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadbd780eee0aeb48847b23572672d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _unit: {fileID: 0}
+  _unitAnimator: {fileID: 0}
   _archerTower: {fileID: 2073138977}
   _archerTowerAnimator: {fileID: 2073138974}
 --- !u!114 &2073138977

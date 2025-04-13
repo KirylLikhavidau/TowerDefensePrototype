@@ -18,7 +18,7 @@ public abstract class ObjectSpawner : MonoBehaviour
         }
     }
 
-    private void Spawn()
+    protected virtual void Spawn()
     {
         var obj = _pool.GetObject();
         obj.gameObject.SetActive(true);

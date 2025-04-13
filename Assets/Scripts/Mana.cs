@@ -6,9 +6,10 @@ using System.Collections.Generic;
 public class Mana : Resource
 {
     [SerializeField] private List<ArcherTower> _towerPrefabs;
-    [SerializeField] private Enemy _enemyPrefab;
 
     public int Amount => _resource;
+
+    private Queue<Enemy> _spawnedEnemies = new Queue<Enemy>();
 
     private void OnEnable()
     {
@@ -17,7 +18,6 @@ public class Mana : Resource
             tower.ManaDecreasing += DecreaseMana;
             tower.ManaIncreasing += IncreaseMana;
         }
-        _enemyPrefab.Died += IncreaseMana;
     }
 
     private void OnDisable()
@@ -27,7 +27,16 @@ public class Mana : Resource
             tower.ManaDecreasing -= DecreaseMana;
             tower.ManaIncreasing -= IncreaseMana;
         }
-        _enemyPrefab.Died -= IncreaseMana;
+
+        for (int i = 0; i < _spawnedEnemies.Count; i++)
+            _spawnedEnemies.Dequeue().Died -= IncreaseMana;
+    }
+
+    public void SubscribeInstance(Enemy enemy)
+    {
+        _spawnedEnemies.Enqueue(enemy);
+        //Увеличивает ману на два, почему?
+        enemy.Died += IncreaseMana;
     }
 
     private void DecreaseMana(float decreaseAmount)

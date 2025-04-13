@@ -9,11 +9,12 @@ public abstract class Tower : MonoBehaviour
     protected float _currentDamageToUnits;
     protected float _currentSellPrice;
 
+    public float CurrentDamageToUnits => _currentDamageToUnits;
     public float CurrentUpgradeCost => _currentUpgradeCost;
     public float CurrentSellPrice => _currentSellPrice;
 
-    protected abstract void StartAttack(Enemy enemy);
-    protected abstract void StopAttack(Enemy enemy);
+    protected abstract void StartAttack();
+    protected abstract void StopAttack();
     protected abstract void Upgrade();
     protected abstract void Sell();
 }

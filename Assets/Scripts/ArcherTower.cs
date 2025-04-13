@@ -1,15 +1,17 @@
 ﻿using System;
-using TMPro;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ArcherTower : Tower
 {
-    private const float _damageUpgradeMultiplier = 1.5f;
-    private const float _costUpgradeMultiplier = 1.8f;
-    private const float _costSellMultiplier = 0.7f;
+    private readonly float _damageUpgradeMultiplier = 1.5f;
+    private readonly float _costUpgradeMultiplier = 1.8f;
+    private readonly float _costSellMultiplier = 0.7f;
 
     [SerializeField] private AttackZone _attackDistance;
+    [SerializeField] private ObjectPool _arrowPool;
     [SerializeField] private ArrowSpawner _arrowSpawner;
     [SerializeField] private ArrowMover _arrowMover;
     [SerializeField] private Button _makeButton;
@@ -22,9 +24,11 @@ public class ArcherTower : Tower
     public event Action<float> ManaIncreasing;
 
     private bool _alreadyAttackingEnemy = false;
+    private Queue<Enemy> _enemiesToAttack;
 
     private void Awake()
     {
+        _enemiesToAttack = new Queue<Enemy>();
         _currentDamageToUnits = _defaultDamageToUnits;
         _currentUpgradeCost = _defaultUpgradeCost;
         _currentSellPrice = _currentUpgradeCost * _costSellMultiplier;
@@ -41,8 +45,8 @@ public class ArcherTower : Tower
 
         if (_attackDistance != null)
         {
-            _attackDistance.EnemyEntered += StartAttack;
-            _attackDistance.EnemyExited += StopAttack;   
+            _attackDistance.EnemyEntered += AddToTargetList;
+            _attackDistance.EnemyExited += RemoveTargetFromList;   
         }
     }
 
@@ -54,22 +58,51 @@ public class ArcherTower : Tower
 
         if (_attackDistance != null)
         {
-            _attackDistance.EnemyEntered -= StartAttack;
-            _attackDistance.EnemyExited -= StopAttack;
+            _attackDistance.EnemyEntered -= AddToTargetList;
+            _attackDistance.EnemyExited -= RemoveTargetFromList;
         }
-        
     }
 
-    protected override void StartAttack(Enemy enemy)
+    private void AddToTargetList(Enemy target)
+    {
+        target.Dying += RemoveTargetFromList;
+
+        _enemiesToAttack.Enqueue(target);
+        StartAttack();
+    }
+
+    private void RemoveTargetFromList()
+    {
+        if (_enemiesToAttack.TryPeek(out Enemy removingTarget))
+        {
+            _enemiesToAttack.Dequeue();
+            removingTarget.Dying -= RemoveTargetFromList;
+        }
+        
+        StopAttack();
+
+        if (_enemiesToAttack.TryPeek(out Enemy target))
+            StartAttack();
+    }
+
+    protected override void StartAttack()
     {
         if (_alreadyAttackingEnemy == false)
         {
-            _arrowSpawner?.gameObject.SetActive(true);
+            if (_arrowPool.transform.childCount != 0)
+                foreach (var arrow in _arrowPool.PooledObjects)
+                {
+                    arrow.gameObject.TryGetComponent(out ArrowMover mover);
+                    mover.Target = _enemiesToAttack.Peek();
+                }
+            else
+                _arrowMover.Target = _enemiesToAttack.Peek();
+            _arrowSpawner.gameObject.SetActive(true);
             _alreadyAttackingEnemy = true;
         }
     }
 
-    protected override void StopAttack(Enemy enemy)
+    protected override void StopAttack()
     {
         _arrowSpawner?.gameObject.SetActive(false);
         _alreadyAttackingEnemy = false;
@@ -77,6 +110,8 @@ public class ArcherTower : Tower
 
     protected override void Upgrade() 
     {
+        if (_attackDistance.gameObject.activeSelf == false)
+            _attackDistance?.gameObject.SetActive(true);
         _currentSellPrice = _currentUpgradeCost * _costSellMultiplier;
         ManaDecreasing?.Invoke(_currentUpgradeCost);
         _currentDamageToUnits *= _damageUpgradeMultiplier;
@@ -86,6 +121,7 @@ public class ArcherTower : Tower
 
     protected override void Sell()
     {
+        _attackDistance?.gameObject.SetActive(false);
         ManaIncreasing?.Invoke(_currentSellPrice);
         _currentDamageToUnits = _defaultDamageToUnits;
         _currentUpgradeCost = _defaultUpgradeCost;

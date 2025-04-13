@@ -1,19 +1,24 @@
-﻿public class ArrowRemover : ObjectRemover
-{
-    private Arrow _arrow;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-    private void Awake()
+public class ArrowRemover : ObjectRemover
+{
+    private Queue<Arrow> _arrows;
+
+    public void Awake() 
     {
-        _arrow = (Arrow)_objectPrefab;
+        _arrows = new Queue<Arrow>();
     }
 
-    protected override void OnEnable()
+    public void SubscribeInstance(Arrow arrow)
     {
-        
+        _arrows.Enqueue(arrow);
+        arrow.Fell += RemoveObject;
     }
 
     protected override void OnDisable()
     {
-        
+        for (int i = 0; i < _arrows.Count; i++)  
+            _arrows.Dequeue().Fell -= RemoveObject;
     }
 }

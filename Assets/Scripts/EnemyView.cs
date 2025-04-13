@@ -9,12 +9,12 @@ public class EnemyView : MonoBehaviour
 
     private void OnEnable()
     {
-        _enemyPrefab.Died += PlayDeadAnimation;
+        _enemyPrefab.Dying += PlayDeadAnimation;
     }
 
     private void OnDisable()
     {
-        _enemyPrefab.Died -= PlayDeadAnimation;
+        _enemyPrefab.Dying -= PlayDeadAnimation;
     }
 
     private void Start()
@@ -31,7 +31,7 @@ public class EnemyView : MonoBehaviour
         _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.UpMotion, false);
     }
 
-    private void PlayDeadAnimation(Unit unit)
+    private void PlayDeadAnimation()
     {
         _animationTree.SetBool(AnimatorConstants.EnemyAnimator.States.Dead, true);
     }

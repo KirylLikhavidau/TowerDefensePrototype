@@ -482,10 +482,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 54184121017712862, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
-      propertyPath: _damageToPlayer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 793781736488269610, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -16.57
@@ -702,6 +698,14 @@ PrefabInstance:
       propertyPath: _repeateRate
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8769907939379910508, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
+      propertyPath: _objectPool
+      value: 
+      objectReference: {fileID: 1420935713}
+    - target: {fileID: 8769907939379910508, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
+      propertyPath: _objectPrefab
+      value: 
+      objectReference: {fileID: 1100535163}
     - target: {fileID: 8888824201605420703, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
       propertyPath: _mover
       value: 
@@ -722,6 +726,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5935685115880448732, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
   m_PrefabInstance: {fileID: 1006086176}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1100535163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 54184121017712862, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
+  m_PrefabInstance: {fileID: 1006086176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed11ebfbe82684d4d9c3a1c1812c2ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1324199325 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2054590190370097387, guid: b769ac460c36b1b43897f41d76107e46, type: 3}
@@ -822,6 +837,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _defaultDamageToUnits: 5
   _defaultUpgradeCost: 0
+  _attackDistance: {fileID: 0}
+  _arrowPool: {fileID: 0}
+  _arrowSpawner: {fileID: 0}
+  _arrowMover: {fileID: 0}
   _makeButton: {fileID: 0}
   _upgradeButton: {fileID: 0}
   _sellButton: {fileID: 0}

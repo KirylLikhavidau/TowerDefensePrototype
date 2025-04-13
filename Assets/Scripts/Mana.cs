@@ -42,13 +42,13 @@ public class Mana : Resource
     private void DecreaseMana(float decreaseAmount)
     {
         _resource = Mathf.Clamp(_resource - Convert.ToInt32(Mathf.Round(decreaseAmount)), 0, _maxResource);
-        InvokeAmountChangedEvent(_resource);
+        InvokeAmountChangedEvent();
     }
 
     private void IncreaseMana(float increaseAmount)
     {
         _resource = Mathf.Clamp(_resource + Convert.ToInt32(Mathf.Round(increaseAmount)), 0, _maxResource);
-        InvokeAmountChangedEvent(_resource);
+        InvokeAmountChangedEvent();
     }
 
     private void IncreaseMana(Unit unit)
@@ -60,6 +60,6 @@ public class Mana : Resource
             income = 0;
 
         _resource = Mathf.Clamp(_resource + income, 0, _maxResource);
-        InvokeAmountChangedEvent(_resource);
+        InvokeAmountChangedEvent();
     }
 }

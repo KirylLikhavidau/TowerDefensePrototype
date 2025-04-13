@@ -21,8 +21,8 @@ public abstract class ResourceView : MonoBehaviour
         _resourceObject.ResourceAmountChanged -= ChangeResourceText;
     }
 
-    private void ChangeResourceText(int currentResourceAmount)
+    private void ChangeResourceText()
     {
-        _resourceText.text = currentResourceAmount.ToString();
+        _resourceText.text = _resourceObject.ResourceAmount.ToString();
     }
 }

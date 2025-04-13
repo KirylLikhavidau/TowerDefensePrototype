@@ -8,10 +8,10 @@ public abstract class Resource : MonoBehaviour
 
     public int ResourceAmount => _resource;
 
-    public event Action<int> ResourceAmountChanged;
+    public event Action ResourceAmountChanged;
 
-    protected void InvokeAmountChangedEvent(int amount)
+    protected void InvokeAmountChangedEvent()
     {
-        ResourceAmountChanged?.Invoke(amount);
+        ResourceAmountChanged?.Invoke();
     }
 }

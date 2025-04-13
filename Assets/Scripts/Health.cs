@@ -18,6 +18,6 @@ public class Health : Resource
     private void DecreaseHealth(Enemy enemy)
     {
         _resource = Mathf.Clamp(_resource - enemy.DamageToPlayer, 0, _maxResource);
-        InvokeAmountChangedEvent(_resource);
+        InvokeAmountChangedEvent();
     }
 }

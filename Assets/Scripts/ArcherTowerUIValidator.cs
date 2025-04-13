@@ -7,20 +7,12 @@ public class ArcherTowerUIValidator : MonoBehaviour
 
     private void OnEnable()
     {
-        foreach (var tower in _towers)
-        {
-            tower.TowerSold += ValidateButtons;
-            tower.TowerUpgraded += ValidateButtons;
-        }    
+        _mana.ResourceAmountChanged += ValidateButtons;
     }
 
     private void OnDisable()
     {
-        foreach (var tower in _towers)
-        {
-            tower.TowerSold += ValidateButtons;
-            tower.TowerUpgraded += ValidateButtons;
-        }
+        _mana.ResourceAmountChanged -= ValidateButtons;
     }
 
     private void ValidateButtons()

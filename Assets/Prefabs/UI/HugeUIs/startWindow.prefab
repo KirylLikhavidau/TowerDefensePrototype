@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8150434132463544773}
   - component: {fileID: 952624237503360346}
   m_Layer: 5
-  m_Name: button_quit
+  m_Name: button_continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 7323230180180685665}
   - component: {fileID: 5539157239504314567}
   - component: {fileID: 3478473304795669912}
+  - component: {fileID: 2654141090644702386}
   m_Layer: 5
   m_Name: StartWindow
   m_TagString: Untagged
@@ -389,6 +390,23 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2654141090644702386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443275767275499695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b61beae5f0a544f862a19c4ddd8d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _windowCanvasGroup: {fileID: 3478473304795669912}
+  _options: {fileID: 0}
+  _levelsWindow: {fileID: 0}
+  _levelHubButton: {fileID: 6396663093394977561}
+  _optionsButton: {fileID: 6007922020131024978}
 --- !u!1 &4426999460898087703
 GameObject:
   m_ObjectHideFlags: 0

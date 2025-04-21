@@ -1,4 +1,7 @@
-﻿public static class AnimatorConstants
+﻿using System.Globalization;
+using UnityEngine;
+
+public static class AnimatorConstants
 {
     public static class EnemyAnimator
     {

@@ -56,8 +56,8 @@ MonoBehaviour:
   _defaultDamageToUnits: 2
   _defaultUpgradeCost: 50
   _attackDistance: {fileID: 7228214504837720079}
-  _arrowSpawner: {fileID: 3672752730258619222}
   _arrowPool: {fileID: 727815417859316206}
+  _arrowSpawner: {fileID: 3672752730258619222}
   _arrowMover: {fileID: 8035648217795027762, guid: f6ec30caf6b38b142950eb9d29087ffd, type: 3}
   _makeButton: {fileID: 1247588233892506724}
   _upgradeButton: {fileID: 6192467371693571452}
@@ -586,7 +586,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!1001 &87075071182268736
 PrefabInstance:

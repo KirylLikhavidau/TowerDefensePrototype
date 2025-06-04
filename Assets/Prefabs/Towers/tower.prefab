@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5548618067527582766}
   - component: {fileID: 5372224793269686616}
-  - component: {fileID: 5881932886541441877}
   - component: {fileID: 2530465166852877081}
+  - component: {fileID: 5881932886541441877}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -53,31 +53,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525a80924be2dd842bcd5036699c4628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _defaultDamageToUnits: 2
-  _defaultUpgradeCost: 50
+  _viewModel: {fileID: 2530465166852877081}
   _attackDistance: {fileID: 7228214504837720079}
   _arrowPool: {fileID: 727815417859316206}
   _arrowSpawner: {fileID: 3672752730258619222}
   _arrowMover: {fileID: 8035648217795027762, guid: f6ec30caf6b38b142950eb9d29087ffd, type: 3}
-  _makeButton: {fileID: 1247588233892506724}
-  _upgradeButton: {fileID: 6192467371693571452}
-  _sellButton: {fileID: 1168330268100940946}
---- !u!114 &5881932886541441877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152454983887125841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dadbd780eee0aeb48847b23572672d58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _unit: {fileID: 8570391000412722830}
-  _unitAnimator: {fileID: 5979135823285771533}
-  _archerTower: {fileID: 5372224793269686616}
-  _archerTowerAnimator: {fileID: 6989025480150361506}
 --- !u!114 &2530465166852877081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,22 +70,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0606d4f2bcbf6b4bbbcf89c79a52571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _view: {fileID: 5881932886541441877}
   _tower: {fileID: 5372224793269686616}
+  _mana: {fileID: 0}
+--- !u!114 &5881932886541441877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152454983887125841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dadbd780eee0aeb48847b23572672d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _viewModel: {fileID: 2530465166852877081}
+  _unitAnimator: {fileID: 5979135823285771533}
+  _archerTowerAnimator: {fileID: 6989025480150361506}
   _upgradeButtons:
   - {fileID: 6192467371693571452}
   - {fileID: 1247588233892506724}
-  _wrappingButtons:
-  - {fileID: 6192467371693571452}
-  - {fileID: 1247588233892506724}
-  - {fileID: 1168330268100940946}
-  - {fileID: 1877244709428413671}
-  _unwrappingButtons:
-  - {fileID: 1811716327548614675}
-  _upgradePriceText: {fileID: 249038081443199546}
-  _makePriceText: {fileID: 2262294651748365303}
-  _sellPriceText: {fileID: 2683713808596762546}
+  _sellButton: {fileID: 1168330268100940946}
+  _closeButton: {fileID: 1877244709428413671}
+  _openButton: {fileID: 1811716327548614675}
+  _upgradePrice: {fileID: 249038081443199546}
+  _makePrice: {fileID: 2262294651748365303}
+  _sellPrice: {fileID: 2683713808596762546}
   _canvasGroup: {fileID: 5621274807278402571}
   _wrappingDuration: 0.25
+  _unit: {fileID: 8570391000412722830}
 --- !u!1 &214161060734525967
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6613092728128532492}
   - component: {fileID: 7539118583264513098}
   - component: {fileID: 4273822494923652127}
-  - component: {fileID: 7935775813955306093}
+  - component: {fileID: 7808623569045774879}
   - component: {fileID: 6398812447721561359}
   - component: {fileID: 1565696454656070700}
   - component: {fileID: 1092581906562807673}
@@ -115,7 +115,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7935775813955306093
+--- !u!114 &7808623569045774879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,15 +124,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2343242212756894207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed11ebfbe82684d4d9c3a1c1812c2ae5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e67a62840fa56b43aacd235c2118148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 30
-  _damageToUnits: 0
-  _dyingTime: 1
   _sensetivityToDamage: 100
   _damageToPlayer: 1
   _incomeFromDeath: 5
+  _health: 40
+  _damageToUnits: 3
+  _dyingTime: 0.9
 --- !u!114 &6398812447721561359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,8 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e22c2324631a24b83631142a2d52f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 7935775813955306093}
-  _mover: {fileID: 6398812447721561359}
+  _enemyPrefab: {fileID: 7808623569045774879}
   _animationTree: {fileID: 4273822494923652127}
 --- !u!61 &1092581906562807673
 BoxCollider2D:

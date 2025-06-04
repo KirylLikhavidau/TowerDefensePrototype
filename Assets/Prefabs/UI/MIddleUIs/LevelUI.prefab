@@ -458,7 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _resource: 200
   _maxResource: 2500
-  _towerPrefabs: []
+  _towerViewModels: []
 --- !u!114 &5333569479174771884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _resourceText: {fileID: 2332330704094021699}
-  _resourceObject: {fileID: 4279481659950127463}
+  _resource: {fileID: 4279481659950127463}
 --- !u!1 &6251552427459886710
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 6719460864160535765}
   - component: {fileID: 7653852489820921953}
   - component: {fileID: 8974554950238072405}
-  - component: {fileID: 7188144553365321755}
+  - component: {fileID: 7406045752216628061}
   - component: {fileID: 6841106923533647370}
   m_Layer: 5
   m_Name: heart_amount
@@ -806,7 +806,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7188144553365321755
+--- !u!114 &7406045752216628061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -834,4 +834,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _resourceText: {fileID: 8974554950238072405}
-  _resourceObject: {fileID: 7188144553365321755}
+  _resource: {fileID: 7406045752216628061}

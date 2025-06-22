@@ -12,13 +12,15 @@ namespace Towers
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.TryGetComponent(out EnemyUnit enemy))
-                EnemyEntered?.Invoke(enemy);
+                if(enemy.IsDead == false)
+                    EnemyEntered?.Invoke(enemy);
         }
 
         private void OnTriggerExit2D(Collider2D collision)
         {
             if (collision.gameObject.TryGetComponent(out EnemyUnit enemy))
-                EnemyExited?.Invoke();
+                if (enemy.IsDead == false)
+                    EnemyExited?.Invoke();
         }
     }
 }

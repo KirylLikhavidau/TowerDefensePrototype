@@ -30,14 +30,14 @@ namespace Game.Resource
             }
 
             for (int i = 0; i < _spawnedEnemies.Count; i++)
-                _spawnedEnemies.Dequeue().Died -= IncreaseMana;
+                _spawnedEnemies.Dequeue().Died -= (enemy) => IncreaseMana(enemy.IncomeFromDeath);
         }
 
         public void SubscribeInstance(EnemyUnit enemy)
         {
             _spawnedEnemies.Enqueue(enemy);
             //Увеличивает ману на два, почему?
-            enemy.Died += IncreaseMana;
+            enemy.Died += (enemy) => IncreaseMana(enemy.IncomeFromDeath);
         }
 
         private void DecreaseMana(float decreaseAmount)
@@ -48,17 +48,6 @@ namespace Game.Resource
         private void IncreaseMana(float increaseAmount)
         {
             ResourceAmount.Value = Mathf.Clamp(ResourceAmount.Value + Convert.ToInt32(Mathf.Round(increaseAmount)), 0, _maxResource);
-        }
-
-        private void IncreaseMana(EnemyUnit unit)
-        {
-            int income;
-            if (unit.TryGetComponent(out EnemyUnit enemy))
-                income = enemy.IncomeFromDeath;
-            else
-                income = 0;
-
-            ResourceAmount.Value = Mathf.Clamp(ResourceAmount.Value + income, 0, _maxResource);
         }
     }
 }

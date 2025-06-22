@@ -7,24 +7,18 @@ namespace Towers.Source
     public class Arrow : PoolObject 
     {
         [SerializeField] private ArrowMover _mover;
-
         [HideInInspector] public ArcherTower Tower;
+
+        public event Action<Arrow> Fell;
 
         private void OnEnable()
         {
-            _mover.FlyFinished += InvokeFellEvent;
+            _mover.FlyFinished += (obj) => Fell.Invoke(obj);
         }
 
         private void OnDisable()
         {
-            _mover.FlyFinished -= InvokeFellEvent;
-        }
-
-        public event Action<Arrow> Fell;
-
-        private void InvokeFellEvent(Arrow arrow)
-        {
-            Fell.Invoke(arrow);
+            _mover.FlyFinished -= (obj) => Fell.Invoke(obj);
         }
     }
 }

@@ -11,12 +11,10 @@ namespace Pool
 
         private IEnumerator SpawnObjects()
         {
-            var wait = new WaitForSeconds(_delay);
-
-            while (enabled)
+            while (gameObject.activeSelf)
             {
                 Spawn();
-                yield return wait;
+                yield return new WaitForSeconds(_delay);
             }
         }
 

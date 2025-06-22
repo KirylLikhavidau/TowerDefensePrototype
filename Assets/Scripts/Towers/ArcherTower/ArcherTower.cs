@@ -76,14 +76,15 @@ namespace Towers
             }
         
             StopAttack();
-
-            if (_enemiesToAttack.TryPeek(out EnemyUnit target))
+            
+            if (_enemiesToAttack.Count > 0)
                 StartAttack();
         }
 
         private void StartAttack()
         {
             if (_alreadyAttackingEnemy == false)
+            {
                 if (_arrowPool.transform.childCount != 0)
                     foreach (var arrow in _arrowPool.PooledObjects)
                     {
@@ -94,6 +95,7 @@ namespace Towers
                     _arrowMover.Target = _enemiesToAttack.Peek();
                 _arrowSpawner.gameObject.SetActive(true);
                 _alreadyAttackingEnemy = true;
+            }
         }
 
         private void StopAttack()
